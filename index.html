@@ -18,19 +18,49 @@
 	<nav class="horizontal">
 		<ul>
 			<li><a href="#" class="js-sidebar-toggle"><i class="fa fa-bars"></i></a></li>
-			<li><a href="#"><i class="fa fa-pie-chart"></i></a></li>
-			<li><a href="#"><i class="fa fa-warning"></i></a></li>
+			<li><a href="#" data-dropdown="dropdown-topbar-warns"><i class="fa fa-pie-chart"></i></a></li>
+			<li><a href="#" data-dropdown="dropdown-topbar-warn"><i class="fa fa-warning"></i></a></li>
 		</ul>
+
 	</nav>
+
+	<ul class="dropdown" id="dropdown-topbar-warns" data-placement="bottom-start">
+		<li><a href="#">Prywatność</a></li>
+		<li><a href="#">Powiadomienia</a></li>
+		<li><a href="#">Ustawienia</a></li>
+		<li class="spacer" aria-hidden="true"></li>
+		<li><a href="#">Wyloguj się</a></li>
+	</ul>
+	<ul class="dropdown" id="dropdown-topbar-warn" data-placement="bottom-start">
+		<li><a href="#">Prywatność</a></li>
+		<li><a href="#">Powiadomienia</a></li>
+		<li><a href="#">Ustawienia</a></li>
+		<li class="spacer" aria-hidden="true"></li>
+		<li><a href="#">Wyloguj się</a></li>
+	</ul>
 	<nav class="horizontal">
 		<ul>
 			<li><a href="https://github.com/tnifey/tnifey.github.io"><i class="fa fa-github icon-margin-right"></i>Zobacz pliki</a></li>
-			<li><a href="#"><i class="fa fa-bell"></i></a></li>
-			<li><a href="#"><i class="fa fa-envelope"></i></a></li>
-			<li><a href="#" data-dropdown="dropdown-topbar-user">Jan Kowalski</a></li>
+			<li><a href="#" data-dropdown="dropdown-topbar-notify"><i class="fa fa-bell"></i></a></li>
+			<li><a href="#" data-dropdown="dropdown-topbar-msg"><i class="fa fa-envelope"></i></a></li>
+			<li><a href="#" data-dropdown="dropdown-topbar-user"><i class="fa fa-user"></i></a></li>
 		</ul>
 	</nav>
-	<ul class="dropdown" id="dropdown-topbar-user">
+	<ul class="dropdown" id="dropdown-topbar-user" data-placement="bottom-end">
+		<li><a href="#">Prywatność</a></li>
+		<li><a href="#">Powiadomienia</a></li>
+		<li><a href="#">Ustawienia</a></li>
+		<li class="spacer" aria-hidden="true"></li>
+		<li><a href="#">Wyloguj się</a></li>
+	</ul>
+	<ul class="dropdown" id="dropdown-topbar-msg" data-placement="bottom-end">
+		<li><a href="#">Prywatność</a></li>
+		<li><a href="#">Powiadomienia</a></li>
+		<li><a href="#">Ustawienia</a></li>
+		<li class="spacer" aria-hidden="true"></li>
+		<li><a href="#">Wyloguj się</a></li>
+	</ul>
+	<ul class="dropdown" id="dropdown-topbar-notify" data-placement="bottom-end">
 		<li><a href="#">Prywatność</a></li>
 		<li><a href="#">Powiadomienia</a></li>
 		<li><a href="#">Ustawienia</a></li>
@@ -101,7 +131,6 @@
 				</div>
 			</section>
 		</header>
-
 
 		<section class="ui-subheader">
 			<nav class="horizontal breadcrumbs">
