@@ -1,0 +1,79 @@
+=btn($bg, $text)
+	background: $bg
+	color: $text
+	border: 1px darken($bg, 15) solid
+	&:hover, &.hover
+		background: darken($bg, 5)
+		color: $text
+	&:focus, &.focus
+		background: darken($bg, 10)
+		color: $text
+
+.btn
+	cursor: pointer
+	display: inline-block
+	margin: 0
+	line-height: 1
+	padding: .8rem .8rem
+	background: transparent
+	font-size: .9rem
+	text-decoration: none
+	border-radius: .2rem
+	border: 0
+	box-sizing: border-box
+	+btn($default, $default-text)	
+	&.btn-primary
+		+btn($primary, $primary-text)
+	&.btn-secondary
+		+btn($secondary, $secondary-text)
+	&.btn-accent
+		+btn($accent, $accent-text)
+	&.btn-grey
+		+btn($grey, $grey-text)
+	&.btn-light
+		+btn($light, $light-text)
+	&.btn-warning
+		+btn($warning, $warning-text)
+	&.btn-danger
+		+btn($danger, $danger-text)
+	&.btn-info
+		+btn($info, $info-text)
+	&.btn-success
+		+btn($success, $success-text)
+
+	&:disabled
+		cursor: default
+		+btn(#aaa, #eaeaea)
+		&:hover
+			background: #aaa
+			color: #eaeaea
+		&:focus
+			background: #aaa
+			color: #eaeaea
+
+	&.btn-block
+		display: block
+		width: 100%
+		text-align: center
+
+	&.btn-small
+		padding: .4rem .5rem
+		border-width: 0 !important
+
+.btn-group
+	display: inline-block
+	font-size: 0
+	// padding: .2rem 0
+	margin: 0
+	&.btn-group-block
+		display: block
+		width: 100%
+	.btn
+		margin: 0
+		border-radius: 0
+		border-left-width: 0
+		&:first-child
+			border-radius: .2rem 0 0 .2rem
+			border-left-width: 1px
+		&:last-child
+			border-radius: 0 .2rem .2rem 0

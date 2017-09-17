@@ -1,0 +1,27 @@
+
+.dataTables_filter, .dataTables_length
+	display: none !important
+
+.dataTables_paginate
+	display: flex
+	padding: 1rem
+	width: 100%
+	justify-content: center
+	border-radius: .2rem
+	overflow: hidden
+
+	span
+		// flex: 1
+		display: flex
+	.paginate_button
+		display: block
+		text-decoration: none
+		padding: 0.5rem 1rem
+		&:hover
+			background: rgba(0,0,0,.05)
+		&.current
+			background: rgba(0,0,0,.1)
+	.ellipsis
+		display: block
+		text-decoration: none
+		padding: 0.5rem

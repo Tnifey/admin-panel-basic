@@ -1,0 +1,29 @@
+
+.badge
+	display: inline-block
+	border-radius: 9999px
+	box-sizing: content-box
+	line-height: 1
+	padding: 0.2rem 0.4rem
+	padding-top: 0.3rem
+	font-size: 0.7rem
+	font-weight: 700
+
+.with-badge
+	position: relative
+	display: inline-block
+	.badge
+		position: absolute
+		top: -0.1rem
+		right: -0.1rem
+
+.label
+	+colorful
+	display: inline-block
+	padding: 0.2rem 1rem
+	padding-bottom: 0.1rem
+	vertical-align: baseline
+	text-transform: uppercase
+	font-size: 0.7rem
+	border-radius: .2rem
+	margin: 0.1rem

@@ -1,15 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="UTF-8">
-	<title>Document</title>
-	
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Admin UI</title>
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="ui/styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="ui/styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="ui/styles/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="ui/styles/selectr.min.css">
+	<link rel="stylesheet" type="text/css" href="ui/styles/style.css">
 </head>
 <body>
 
-<h1>:)</h1>
+<section class="ui-topbar secondary">
+	<nav class="horizontal">
+		<ul>
+			<li><a href="#" class="js-sidebar-toggle"><i class="fa fa-bars"></i></a></li>
+			<li><a href="#"><i class="fa fa-pie-chart"></i></a></li>
+			<li><a href="#"><i class="fa fa-warning"></i></a></li>
+		</ul>
+	</nav>
+	<nav class="horizontal">
+		<ul>
+			<li><a href="https://github.com/tnifey/admin-ui"><i class="fa fa-github icon-margin-right"></i>Zobacz pliki</a></li>
+			<li><a href="#"><i class="fa fa-bell"></i></a></li>
+			<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+			<li><a href="#" data-dropdown="dropdown-topbar-user">Jan Kowalski</a></li>
+		</ul>
+	</nav>
+	<ul class="dropdown" id="dropdown-topbar-user">
+		<li><a href="#">Prywatność</a></li>
+		<li><a href="#">Powiadomienia</a></li>
+		<li><a href="#">Ustawienia</a></li>
+		<li class="spacer" aria-hidden="true"></li>
+		<li><a href="#">Wyloguj się</a></li>
+	</ul>
+</section>
+<section class="ui">
+	<aside class="ui-sidebar primary">
+		<aside class="ui-sidebar-profile">
+			<img src="ui/images/a6.png" class="avatar avatar-circle">
+			<span class="ui-sidebar-profile-meta">Jan Kowalski</span>
+			<div>
+				<button class="btn btn-small btn-primary"><i class="fa fa-gear"></i></button>
+			</div>
+		</aside>
+
+		<nav class="ui-sidebar-menu">
+			<h4>Menu header</h4>
+			<ul>
+				<li><a href="#"><i class="fa fa-check"></i> Basic menu item</a></li>
+				<li><a href="#" class="hover"><i class="fa fa-check"></i> Menu item hover</a></li>
+				<li><a href="#" class="focus"><i class="fa fa-check"></i> Menu item focus</a></li>
+				<li><a href="#" class="active"><i class="fa fa-check"></i> Active menu item</a></li>
+			</ul>
+		</nav>
+
+		<nav class="ui-sidebar-menu">
+			<h4>Submenu</h4>
+			<ul>
+				<li class="with-submenu">
+					<a href="#" data-toggler>
+						<i class="fa fa-check"></i>
+						With submenu 
+					</a>
+					<ul class="submenu">
+						<li><a href="#"><i class="fa fa-check"></i> Multilevel menu item</a></li>
+						<li><a href="#"><i class="fa fa-check"></i> Multilevel menu item</a></li>
+						<li><a href="#"><i class="fa fa-check"></i> Multilevel menu item</a></li>
+					</ul>
+				</li>
+				<li class="with-submenu">
+					<a href="#" data-toggler>
+						<i class="fa fa-check"></i>
+						With submenu 
+					</a>
+					<ul class="submenu">
+						<li><a href="#">Multilevel menu item</a></li>
+						<li><a href="#">Multilevel menu item</a></li>
+						<li><a href="#">Multilevel menu item</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</aside>
+	<section class="ui-main">
+
+
+		<header class="ui-header default">
+			<section class="ui-header-extra">
+				<h3><b>Statystyki strony</b></h3>
+			</section>
+			<section class="ui-header-extra">
+				<div class="btn-group">
+					<button class="btn"><i class="fa fa-pie-chart"></i></button>
+					<button class="btn"><i class="fa fa-warning"></i></button>
+					<button class="btn"><i class="fa fa-gear"></i></button>
+				</div>
+			</section>
+		</header>
+
+
+		<section class="ui-subheader">
+			<nav class="horizontal breadcrumbs">
+				<ul>
+					<li><i class="fa fa-dashboard"></i></li>
+					<li><a href="#">Statystyki strony</a></li>
+				</ul>
+			</nav>
+			<nav class="horizontal">
+				<ul>
+					<li><a href="#"><i class="fa fa-pie-chart icon-margin-right"></i> Statystyki</a></li>
+					<li><a href="#"><i class="fa fa-cog icon-margin-right"></i> Ustawienia</a></li>
+				</ul>
+			</nav>
+		</section>
+
+
+		<section class="ui-container">
+			<div class="col-4">
+				<section class="ui-panel">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Hello World
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<p>
+								some text with link to <a href="#"><i class="fa fa-github fa-fw fa-lg"></i> github</a>
+							</p>
+						</aside>
+					</header>
+					<article class="ui-panel-content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</article>
+					<footer class="ui-panel-footer">
+						<aside class="ui-panel-footer-extra">
+							<h3>
+								Footer title
+								<small>with subtitle</small>
+							</h3>
+						</aside>
+						<aside class="ui-panel-footer-extra">
+							<a href="#" class="btn"><i class="fa fa-close icon-margin-right"></i> Anuluj</a>
+							<a href="#" class="btn btn-success"><i class="fa fa-save icon-margin-right"></i> Zapisz</a>
+						</aside>
+					</footer>
+				</section>
+
+
+
+				<section class="ui-panel">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Hello World
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<div class="input-group">
+								<input type="search" class="form-control" placeholder="Szukaj...">
+							</div>
+						</aside>
+					</header>
+					<table class="ui-panel-table table">
+						<thead>
+							<th></th>
+							<th>Opis</th>
+							<th>Polubienia</th>
+							<th>Znajomi</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-center">
+									<img src="ui/images/a1.png" class="avatar avatar-circle">
+									<div><a href="#">Bianka Jaskolska</a></div>
+								</td>
+								<td>
+									<div class="small">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit tempor.
+									</div>
+								</td>
+								<td>123</td>
+								<td>513</td>
+							</tr>
+							<tr>
+								<td class="text-center">
+									<img src="ui/images/a2.png" class="avatar avatar-circle">
+									<div><a href="#">Maja Rudawski</a></div>
+								</td>
+								<td>
+									<div class="small">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit tempor.
+									</div>
+								</td>
+								<td>512</td>
+								<td>341</td>
+							</tr>
+							<tr>
+								<td class="text-center">
+									<img src="ui/images/a3.png" class="avatar avatar-circle">
+									<div><a href="#">Julia Warszawski</a></div>
+								</td>
+								<td>
+									<div class="small">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit tempor.
+									</div>
+								</td>
+								<td>51</td>
+								<td>231</td>
+							</tr>
+							<tr>
+								<td class="text-center">
+									<img src="ui/images/a4.png" class="avatar avatar-circle">
+									<div><a href="#">Paula Gniewek</a></div>
+								</td>
+								<td>
+									<div class="small">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit tempor.
+									</div>
+								</td>
+								<td>324</td>
+								<td>1312</td>
+							</tr>
+						</tbody>
+					</table>
+					<footer class="ui-panel-footer">
+						<aside class="ui-panel-footer-extra">
+							<h3>
+								Footer title
+								<small>with subtitle</small>
+							</h3>
+						</aside>
+						<aside class="ui-panel-footer-extra">
+							<a href="#" class="btn"><i class="fa fa-close icon-margin-right"></i> Anuluj</a>
+							<a href="#" class="btn btn-success"><i class="fa fa-save icon-margin-right"></i> Zapisz</a>
+						</aside>
+					</footer>
+				</section>
+			</div>
+			<div class="col-4">
+
+
+				<section class="ui-panel">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Default with simple pagination
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<div class="btn-group">
+								<button class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+								<button class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+							</div>
+						</aside>
+					</header>
+				</section>
+
+
+				<section class="ui-panel">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Default with avatar stack
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<img src="ui/images/a1.png" class="avatar avatar-circle avatar-stack">
+							<img src="ui/images/a2.png" class="avatar avatar-circle avatar-stack">
+							<img src="ui/images/a3.png" class="avatar avatar-circle avatar-stack">
+							<img src="ui/images/a4.png" class="avatar avatar-circle avatar-stack">
+							<img src="ui/images/a5.png" class="avatar avatar-circle avatar-stack">
+						</aside>
+					</header>
+				</section>
+
+
+				<section class="ui-panel">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Default with avatar with badge
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<div class="with-badge">
+								<img src="ui/images/a2.png" class="avatar avatar-circle avatar-stack">
+								<span class="badge primary">12</span>
+							</div>
+							<div class="with-badge">
+								<img src="ui/images/a5.png" class="avatar avatar-circle avatar-stack">
+								<span class="badge accent">23</span>
+							</div>
+						</aside>
+					</header>
+				</section>
+
+
+				<section class="ui-panel">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Default with labels
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<div class="label success">Success</div>
+							<div class="label danger">Danger</div>
+						</aside>
+					</header>
+				</section>
+
+
+				<section class="ui-panel">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Default with labels
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<div class="badge success">Success</div>
+							<div class="badge danger">Danger</div>
+						</aside>
+					</header>
+				</section>
+			</div>
+			<div class="col-4">
+				<section class="ui-panel danger">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Danger with text and icons
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							Loading <i class="fa fa-spinner fa-spin icon-margin-left"></i>
+						</aside>
+					</header>
+				</section>
+				<section class="ui-panel success">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Success with button
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<button class="btn btn-success">Success</button>
+						</aside>
+					</header>
+				</section>
+				<section class="ui-panel warning">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Warning with button group
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<div class="btn-group">
+								<button class="btn"><i class="fa fa-align-left"></i></button>
+								<button class="btn"><i class="fa fa-align-center"></i></button>
+								<button class="btn"><i class="fa fa-align-right"></i></button>
+								<button class="btn"><i class="fa fa-align-justify"></i></button>
+							</div>
+						</aside>
+					</header>
+				</section>
+				<section class="ui-panel info">
+					<header class="ui-panel-header">
+						<aside class="ui-panel-header-extra">
+							<h3>
+								Info with select
+							</h3>
+						</aside>
+						<aside class="ui-panel-header-extra">
+							<select class="form-select">
+								<option>Lorem ipsum 1</option>
+								<option>Lorem ipsum 2</option>
+								<option>Lorem ipsum 3</option>
+								<option>Lorem ipsum 4</option>
+								<option>Lorem ipsum 5</option>
+								<option>Lorem ipsum 6</option>
+								<option>Lorem ipsum 7</option>
+								<option>Lorem ipsum 8</option>
+								<option>Lorem ipsum 9</option>
+								<option>Lorem ipsum 10</option>
+							</select>
+						</aside>
+					</header>
+				</section>
+			</div>
+		</section>
+	</section>
+</section>
+
+<!-- Scripts -->
+<script src="ui/scripts/jquery.js"></script>
+<script src="ui/scripts/selectr.min.js"></script>
+<script src="ui/scripts/popper.min.js"></script>
+
+<!-- Script initializations -->
+<script src="ui/scripts/init/sidebar.js"></script>
+<script src="ui/scripts/init/submenu.js"></script>
+<script src="ui/scripts/init/form-select.js"></script>
+<script src="ui/scripts/init/dropdown.js"></script>
 	
 </body>
 </html>

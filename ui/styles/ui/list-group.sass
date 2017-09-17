@@ -1,0 +1,29 @@
+.list-group
+	display: block
+	width: 100%
+	list-style: none
+	margin: 0
+	padding: 0
+	border: 1px rgba(0,0,0,.3) solid
+	border-radius: .3rem
+	overflow: hidden
+	+colorful
+	.list-group-item
+		display: block
+		padding: 1rem
+		border-bottom: 1px rgba(0,0,0,.3) solid
+		text-decoration: none
+		&:last-child
+			border-bottom: 0
+
+	a.list-group-item
+		display: block
+		padding: 1rem
+		border-bottom: 1px rgba(0,0,0,.3) solid
+		text-decoration: none
+		&:last-child
+			border-bottom: 0
+		&:hover
+			background: rgba(0,0,0,.1)
+		&:focus
+			background: rgba(0,0,0,.2)

@@ -1,0 +1,44 @@
+nav.ui-topbar-menu, nav.horizontal
+	ul
+		display: flex
+		list-style: none
+		margin: 0
+		padding: 0
+		li
+			display: block
+			a
+				display: block
+				padding: .8rem 1rem
+				text-decoration: none
+				&:hover, &.hover
+					background: rgba(0,0,0,.1)
+				&:focus, &.focus
+					background: rgba(0,0,0,.2)
+
+	&.breadcrumbs
+		ul
+			margin: 0 2rem
+			font-size: .8rem
+			li
+				&:first-child
+					font-weight: bold
+				&:after
+					content: '\00BB'
+					margin-left: .5rem
+					margin-right: .5rem
+					font-weight: normal
+				&:last-child
+					&:after
+						display: none
+				a, span
+					display: inline-block
+					padding: 0
+					&:hover
+						background: transparent
+						text-decoration: underline
+					&:focus
+						background: transparent
+						text-decoration: underline
+					&.active
+						background: transparent
+						text-decoration: underline
