@@ -26,11 +26,7 @@ $(document).ready(function () {
 		});
 
 		window.dropdowns[did] = p;
-
-		// d.hide();
-		setTimeout(function () {
-			d.hide();
-		}, 50)
+		d.hide();
 	});
 
 	$('[data-dropdown]').on('click', function (e) {

@@ -17,26 +17,50 @@
 <section class="ui-topbar secondary">
 	<nav class="horizontal">
 		<ul>
-			<li><a href="#" class="js-sidebar-toggle"><i class="fa fa-bars"></i></a></li>
-			<li><a href="#" data-dropdown="dropdown-topbar-warns"><i class="fa fa-pie-chart"></i></a></li>
+			<li><a href="#" class="js-sidebar-toggle"><i class="fa fa-chevron-left"></i></a></li>
+			<li><a href="#" data-dropdown="dropdown-topbar-statistics"><i class="fa fa-pie-chart"></i></a></li>
 			<li><a href="#" data-dropdown="dropdown-topbar-warn"><i class="fa fa-warning"></i></a></li>
 		</ul>
 
 	</nav>
 
-	<ul class="dropdown" id="dropdown-topbar-warns" data-placement="bottom-start">
-		<li><a href="#">Prywatność</a></li>
-		<li><a href="#">Powiadomienia</a></li>
-		<li><a href="#">Ustawienia</a></li>
-		<li class="spacer" aria-hidden="true"></li>
-		<li><a href="#">Wyloguj się</a></li>
+	<ul class="dropdown" id="dropdown-topbar-statistics" data-placement="bottom-start">
+		<table class="table">
+			<tbody class="small">
+				<tr>
+					<td><b>Dzisiaj</b></td>
+					<td class="text-right">32</td>
+				</tr>
+				<tr>
+					<td><b>Tydzień</b></td>
+					<td class="text-right">145</td>
+				</tr>
+				<tr>
+					<td><b>Miesiąc</b></td>
+					<td class="text-right">5124</td>
+				</tr>
+			</tbody>
+		</table>
 	</ul>
-	<ul class="dropdown" id="dropdown-topbar-warn" data-placement="bottom-start">
-		<li><a href="#">Prywatność</a></li>
-		<li><a href="#">Powiadomienia</a></li>
-		<li><a href="#">Ustawienia</a></li>
-		<li class="spacer" aria-hidden="true"></li>
-		<li><a href="#">Wyloguj się</a></li>
+	<ul class="dropdown alerts" id="dropdown-topbar-warn" data-placement="bottom-start">
+		<li>
+			<div class="alert danger">
+				<h4>Error</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			</div>
+		</li>
+		<li>
+			<div class="alert info">
+				<h4>Info</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			</div>
+		</li>
+		<li>
+			<div class="alert warning">
+				<h4>Warning</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			</div>
+		</li>
 	</ul>
 	<nav class="horizontal">
 		<ul>
@@ -79,12 +103,12 @@
 		</aside>
 
 		<nav class="ui-sidebar-menu">
-			<h4>Menu header</h4>
+			<h4>Main</h4>
 			<ul>
 				<li><a href="#"><i class="fa fa-check"></i> Basic menu item</a></li>
-				<li><a href="#" class="hover"><i class="fa fa-check"></i> Menu item hover</a></li>
-				<li><a href="#" class="focus"><i class="fa fa-check"></i> Menu item focus</a></li>
-				<li><a href="#" class="active"><i class="fa fa-check"></i> Active menu item</a></li>
+				<li><a href="#"><i class="fa fa-check"></i> Basic menu item</a></li>
+				<li><a href="#"><i class="fa fa-check"></i> Basic menu item</a></li>
+				<li><a href="#"><i class="fa fa-check"></i> Basic menu item</a></li>
 			</ul>
 		</nav>
 
@@ -149,7 +173,7 @@
 
 
 		<section class="ui-container">
-			<div class="col-4">
+			<div class="col-12 col-lg-6">
 				<section class="ui-panel">
 					<header class="ui-panel-header">
 						<aside class="ui-panel-header-extra">
@@ -172,6 +196,13 @@
 							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
+
+						<div class="alert danger">
+							<h3><b>Error</b> &raquo; Lorem ipsum dolor sit amet</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+							</p>
+						</div>
 					</article>
 					<footer class="ui-panel-footer">
 						<aside class="ui-panel-footer-extra">
@@ -197,9 +228,7 @@
 							</h3>
 						</aside>
 						<aside class="ui-panel-header-extra">
-							<div class="input-group">
-								<input type="search" class="form-control" placeholder="Szukaj...">
-							</div>
+							<input type="search" class="form-control" placeholder="Szukaj...">
 						</aside>
 					</header>
 					<table class="ui-panel-table table">
@@ -278,7 +307,7 @@
 					</footer>
 				</section>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-lg-6">
 
 
 				<section class="ui-panel">
@@ -366,7 +395,7 @@
 					</header>
 				</section>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-lg-6">
 				<section class="ui-panel danger">
 					<header class="ui-panel-header">
 						<aside class="ui-panel-header-extra">
@@ -440,6 +469,7 @@
 <script src="ui/scripts/jquery.js"></script>
 <script src="ui/scripts/selectr.min.js"></script>
 <script src="ui/scripts/popper.min.js"></script>
+<script src="ui/scripts/js.cookie.js"></script>
 
 <!-- Script initializations -->
 <script src="ui/scripts/init/sidebar.js"></script>
