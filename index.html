@@ -98,9 +98,17 @@
 			<img src="ui/images/a6.jpg" class="avatar avatar-circle">
 			<span class="ui-sidebar-profile-meta">Jan Kowalski</span>
 			<div>
-				<button class="btn btn-small btn-primary"><i class="fa fa-gear"></i></button>
+				<button class="btn btn-small btn-primary" data-dropdown="dropdown-sidebar-settings"><i class="fa fa-gear"></i></button>
 			</div>
 		</aside>
+
+		<ul class="dropdown" id="dropdown-sidebar-settings" data-placement="bottom-end">
+			<li><a href="#">Prywatność</a></li>
+			<li><a href="#">Powiadomienia</a></li>
+			<li><a href="#">Ustawienia</a></li>
+			<li class="spacer" aria-hidden="true"></li>
+			<li><a href="#">Wyloguj się</a></li>
+		</ul>
 
 		<nav class="ui-sidebar-menu">
 			<h4>Main</h4>
@@ -464,6 +472,27 @@
 		</section>
 	</section>
 </section>
+
+
+
+<!-- <div class="modal danger show">
+	<button class="btn btn-modal btn-inherit btn-small modal-close"><i class="fa fa-close fa-lg"></i></button>
+	<article class="modal-body">
+		<h2>
+			Hello World
+		</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.
+		</p>
+	</article>
+	<footer>
+		<div><button class="btn btn-modal btn-block btn-primary">Usuń</button></div>
+		<div><button class="btn btn-modal btn-block btn-danger">Close</button></div>
+	</footer>
+</div> -->
 
 <!-- Scripts -->
 <script src="ui/scripts/jquery.js"></script>
